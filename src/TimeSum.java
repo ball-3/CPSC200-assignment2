@@ -1,16 +1,20 @@
 import java.util.Random;
 
 public class TimeSum {
-
     StopWatch watch;
-    Random random;
-    private int n;
+    Sum1 sum1;
+    Sum2 sum2;
+    Sum3 sum3;
+    Sum4 sum4;
+    Sum5 sum5;
+    Sum6 sum6;
 
-    public TimeSum (Random random, StopWatch watch, int n)
+    public TimeSum (StopWatch watch)
     {
-        this.random = random;
         this.watch = watch;
-        this.n = n;
+
+        sum1 = new Sum1(watch, n1);
+        sum2 = new Sum2(watch, n2);
 
         //do thie thing
     }

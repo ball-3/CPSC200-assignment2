@@ -6,16 +6,16 @@ public class StopWatch {
     private long endTime;
 
     /**
-     * @return elapsed time in seconds
+     * @return elapsed time in nanoseconds
      */
     public double elapsed()
     {
         if (!isRunning)
         {
-            return this.elapsed/1000000000;
+            return this.elapsed;
         }
 
-        return (System.nanoTime() - startTime)/1000000000;
+        return (System.nanoTime() - startTime);
     }
 
     public boolean isRunning()
